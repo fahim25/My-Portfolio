@@ -49,9 +49,6 @@
 ====================================
 */
 :root{
-    --z-back: -10;
-    --z-normal: 1;
-    --z-tooltip: 10;
     --z-fixed: 100;
 }
 /*
@@ -212,10 +209,13 @@ img{
 |   |   | Home
 ====================================
 */
+.home__container{
+    height: calc(100vh - var(--header-height));
+    row-gap: 5rem;
+}
 .home{
-    height: calc(104.85vh - 3rem);
-    row-gap: 1rem;
     background-color: var(--black-color);
+    position: relative;
   }
   .home__data{
     align-self: center;
@@ -243,14 +243,15 @@ img{
     padding-left: 10px;
     
   }
-  .home__container{
-    height: calc(100vh - var(--header-height));
-    row-gap: 5rem;
-}
+  
   .home__social-icon:hover{
     color: var(--white-color);
   }
   
+  .home__scroll{
+    align-self: flex-end;
+    padding-bottom: var(--mb-4);
+   }
   
   .home__scroll-link{
       writing-mode: vertical-lr;
