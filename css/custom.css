@@ -1,11 +1,10 @@
 /*==== Google Fonts ====*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;1,400&display=swap');
 
-
 /*==== Generic CSS ====*/
 :root{
     --header-height:48px;
-    --font-medium: 500;
+    --font-semi: 600;
 }
 /*==== Colors ====*/
 
@@ -18,3 +17,18 @@
 
 
 /*====  ====*/
+/*
+====================================
+Deafult Theme
+------------------------------------
+Fonts: Raleway
+------------------------------------
+Colors:
+        Moon Yellow: #F4C613
+        Nero/Grey  : #212226
+        White Smoke: #F5F5F5
+        White      : #FFFFFF  
+        Black      : #0A0A0A
+
+====================================
+*/
