@@ -1,5 +1,5 @@
 /*==== Google Fonts ====*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 
 /*==== Generic CSS ====*/
 :root{
@@ -29,7 +29,6 @@
     --h2-font-size:1.25rem;
     --normal-font-size:1rem;
 }
-
 
 /*
 ====================================
@@ -162,7 +161,7 @@ img{
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color: rgba(255,255,255,.3);
+        background-color: rgba(255,255,255,.5);
         transition: .5s;
         backdrop-filter: blur(10px);
         color: var(--white-color);
@@ -180,6 +179,8 @@ img{
 }
 .nav__logo{
     color: var(--moony-color);
+    font-size: 20px;
+    font-weight: 500;
 }
 .nav__toggle{
     color: var(--moony-color);
@@ -204,7 +205,7 @@ img{
     height: .18rem;
     left: 0;
     top: 2rem;
-    background-color: var(--first-color);
+    background-color: var(--moony-color);
 }
 /*
 ====================================
@@ -212,7 +213,7 @@ img{
 ====================================
 */
 .home{
-    height: calc(100vh - 3rem);
+    height: calc(104.85vh - 3rem);
     row-gap: 1rem;
     background-color: var(--black-color);
   }
@@ -221,22 +222,25 @@ img{
   }
   .home__title{
     font-size: var(--big-font-size);
-    margin-bottom: var(--mb-5);
+    margin-bottom: var(--mb-6);
     color: var(--white-color);
+    font-weight: 400;
   }
   .home__title-color{
     color: var(--moony-color);
+    font-weight: 700;
   }
   .home__social{
     display: inline-block;
-    margin-left:40%;
+    background-color: var(--black-color);
+    margin-left: 40%;
   }
   .home__social-icon{
     width: max-content;
-    margin-bottom: var(--mb-2);
     font-size: 1.5rem;
-    color: var(--second-color);
-    position:relative;
+    color: var(--moony-color);
+    padding-right: 10px;
+    padding-left: 10px;
     
   }
   .home__container{
@@ -244,14 +248,10 @@ img{
     row-gap: 5rem;
 }
   .home__social-icon:hover{
-    color: var(--first-color);
+    color: var(--white-color);
   }
   
-  .home__scroll{
-      position: ;
-      padding-top:50px;
-      margin-left:;
-  }
+  
   .home__scroll-link{
       writing-mode: vertical-lr;
       transform: rotate(-180deg);
@@ -259,6 +259,7 @@ img{
       -webkit-transition: all 1s;
       transition: all 1s;
       text-transform: uppercase;
+      
   }
   .home__scroll-link:hover{
     color: var(--white-color);
@@ -304,6 +305,7 @@ img{
 ====================================
 */
 @media screen and (min-width: 768px){
+    
     body{
         margin: 0;
     }
@@ -317,9 +319,13 @@ img{
         width: 64px;
         top: 3rem;
     }
-
+    .nav__menu{
+        color: #F5F5F5;
+    }
     .nav{
         height: calc(var(--header-height) + 1rem);
+        
+        color: #F5F5F5;
     }
     .nav__list{
         display: flex;
@@ -328,7 +334,13 @@ img{
         margin-left: var(--mb-4);
         margin-bottom: 0;
     }
-    
+
+    .home__scroll{
+        padding-top:0px;
+    }
+    .button{
+        padding-bottom: 5px;
+    }
     .nav__link{
         color: var(--white-color);
     }
