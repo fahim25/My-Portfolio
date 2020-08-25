@@ -177,7 +177,8 @@ img{
 .nav__logo{
     color: var(--moony-color);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
+    font-style:;
 }
 .nav__toggle{
     color: var(--moony-color);
@@ -224,8 +225,9 @@ img{
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-6);
     color: var(--white-color);
-    font-weight: 400;
-  }
+    font-weight: 700;
+    padding-top: 70px;
+  } 
   .home__title-color{
     color: var(--moony-color);
     font-weight: 700;
@@ -233,19 +235,21 @@ img{
   .home__social{
     display: inline-block;
     background-color: var(--black-color);
-    margin-left: 40%;
+    margin-left: 50%;
   }
   .home__social-icon{
     width: max-content;
-    font-size: 1.5rem;
+    font-size: 2.15rem;
     color: var(--moony-color);
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
     
   }
   
   .home__social-icon:hover{
     color: var(--white-color);
+    -webkit-transition: all 1s;
+      transition: all 1s;
   }
   
   .home__scroll{
