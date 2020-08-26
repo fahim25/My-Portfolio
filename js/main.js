@@ -1,5 +1,17 @@
 /*
 ====================================
+|   |   |   | Preloader
+====================================
+*/
+/*
+$(window).on('load', function () { //this $(window).on ('load' make sure to load whole site to active jquer 
+    $('#status').fadeOut();
+    $('#preloader').delay(350).fadeOut('slow');
+});
+*/
+
+/*
+====================================
 |   |   | Menu Show
 ====================================
 */ 
@@ -66,7 +78,7 @@ const sr = ScrollReveal({
 */
 sr.reveal('.home__title', {})
 sr.reveal('.home__scroll', {delay: 200})
-sr.reveal('.home__img', {origin:'right', delay: 400})
+sr.reveal('.button',)
 
 /*
 ====================================
