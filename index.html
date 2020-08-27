@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="css/animate.css">
     <!--Font Awesome-->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!--Favicon/Shortcut icon-->
-    <link rel="shortcut icon" href="img/favicon.ico">
     
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
     <title>Fahim's Portfolio</title>
 </head>
 <body>
     
-    <!--Preloader--><!--
+    <!--Preloader-->
     <div id="preloader">
         <div id="status">
             &nbsp;
         </div>
     </div>
-    -->
     <!-- HEADER -->
     <header class="l-header">
         <nav class="nav bd-grid">
@@ -50,48 +52,87 @@
         <section class="home" id="home">
             <div class="home__container bd-grid">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Fahim Muntasir.</span><span></span><br> I'm a web developer.</h1>
+                    <h1 class="home__title">Hi, <br> I'm <span class="home__title-color">Fahim Muntasir</span><br>I'm a web developer.</h1>
                     <a href="#" class="button">View My Work</a>
                 </div>
-
+                <div class="home__social">
+                    <a href="https://linkedin.com/in/mohammad-fahim-muntasir" class="home__social-icon"><i class='fa fa-linkedin'></i></a>
+                    <a href="https://github.com/fahim25" class="home__social-icon"><i class='fa fa-github'></i></a>
+                    <a href="https://github.com/fahim25" class="home__social-icon"><i class='fa fa-twitter'></i></a>
+                </div>
                 <div class="home__scroll">
                     <a href="#about" class="home__scroll-link"><i class="fa fa-arrow-up"></i>Scroll down</a>
-                        <div class="home__social">
-                            <a href="https://linkedin.com/in/mohammad-fahim-muntasir" class="home__social-icon"><i class='fa fa-linkedin'></i></a>
-                            <a href="https://github.com/fahim25" class="home__social-icon"><i class='fa fa-github'></i></a>
-                        </div>
+                        
                 </div>
             </div>
         </section>
         <!--END of HOME -->
-
+        
         <!--About SEction-->
         <section class="about section" id="about">
             <h2 class="section-title">About</h2>
+        <!--About part One-->
+        <div id="about-02">
+            <div class="content-box-md">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4" id="about-item-left">
+                            <div class="about-item text-center">
+                                <i class="fa fa-rocket"></i>
+                                <h3>Fast</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor amet, consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4" id="about-item-mid">
+                            <div class="about-item text-center">
+                                <i class="fa fa-mobile"></i>
+                                <h3>Responsive</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4" id="about-item-right">
+                            <div class="about-item text-center">
+                                <i class="fa fa-lightbulb-o"></i>
+                                <h3>Intuitive</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of About One Section-->
 
+        <!--About part 2-->
             <div class="about__container bd-grid">
                 <div class="about__img">
                     <img src="img/about.jpg" alt="about img">
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">Fahim Muntasir</h2>
+                    <h2 class="about__subtitle">Who Is This Guy?!</h2>
                     <span class="about__profession">Web developer</span>
                     <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
 
                     <div class="about__social">
                         <a href="#" class="about__social-icon"><i class='fa fa-linkedin' ></i></a>
                         <a href="#" class="about__social-icon"><i class='fa fa-github' ></i></a>
+                        <a href="https://github.com/fahim25" class="about__social-icon"><i class='fa fa-twitter'></i></a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!--End of About Section-->
+         <!--End of About Section-->
 
 
     <!--jQuery-->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!--Bootstrap.js-->
+    <script src="js/bootstrap.min.js"></script>
     <!--Scroll Reveal-->
     <script src="js/scrollreveal.min.js"></script>
     <!--Custom Js-->
