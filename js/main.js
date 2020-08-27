@@ -3,12 +3,11 @@
 |   |   |   | Preloader
 ====================================
 */
-/*
-$(window).on('load', function () { //this $(window).on ('load' make sure to load whole site to active jquer 
+
+$(window).on('load', function () { 
     $('#status').fadeOut();
-    $('#preloader').delay(350).fadeOut('slow');
+    $('#preloader').delay(250).fadeOut('slow');
 });
-*/
 
 /*
 ====================================
@@ -76,20 +75,21 @@ const sr = ScrollReveal({
 |   |SCROLL HOME*
 ====================================
 */
-sr.reveal('.home__title', {})
-sr.reveal('.home__scroll', {delay: 200})
-sr.reveal('.button',)
+sr.reveal('.home__data', {})
+sr.reveal('.button', {delay: 200})
+sr.reveal('.home__social', {delay: 250})
+sr.reveal('.home__scroll', {delay: 300})
 
 /*
 ====================================
 |   |SCROLL About
 ====================================
 */
-sr.reveal('.about__img', {delay: 500})
-sr.reveal('.about__subtitle', {delay: 300})
-sr.reveal('.about__profession', {delay: 400})
-sr.reveal('.about__text', {delay: 500})
-sr.reveal('.about__social-icon', {delay: 600, interval: 200})
+sr.reveal('.about__img', {delay: 450})
+sr.reveal('.about__subtitle', {delay: 200})
+sr.reveal('.about__profession', {delay: 300})
+sr.reveal('.about__text', {delay: 400})
+sr.reveal('.about__social-icon', {delay: 500, interval: 100})
 
 /*
 ====================================
@@ -117,6 +117,15 @@ sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
-
+/*
+====================================
+|   |   |   | Animation
+====================================
+*/
+$(window).on('load', function () {
+    $('#about-item-left').addClass('animated fadeInLeft');
+    $('#about-item-mid').addClass('animated fadeInUp');
+    $('#about-item-right').addClass('animated fadeInRight');
+});
 
 
