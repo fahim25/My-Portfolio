@@ -238,14 +238,13 @@ img {
     color: var(--moony-color);
     font-size: 25px;
     font-weight: 500;
-    /* font-family: 'Sedgwick Ave Display', cursive; */
     font-family: 'Lacquer', cursive;
 }
 
 .nav__logo:hover{
     color: var(--white-color);
-    -webkit-transition: ease 1s;
-    transition: ease 1s;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 .nav__toggle {
     color: var(--moony-color);
@@ -327,8 +326,8 @@ img {
 
 .home__social-icon:hover {
     color: var(--white-color);
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
 .home__scroll {
@@ -340,8 +339,8 @@ img {
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     color: var(--moony-color);
-    -webkit-transition: ease 1s;
-    transition: ease 1s;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
     text-transform: uppercase;
 
 }
@@ -360,21 +359,21 @@ img {
     color: var(--black-color);
     font-weight: 600;
     font-size: 24px;
-    border-color: #F5F5F5;
+    border-color:var(--white-color);
     text-transform: uppercase;
     padding: 12px 24px 12px 24px;
     border: 1px solid var(--moony-color);
     border-width: 1px;
-    -webkit-transition: ease 1s;
-    transition: ease 1s;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
 .button:hover {
     background-color: var(--black-color);
     color: var(--moony-color);
     border: 1px solid var(--white-color);
-    -webkit-transition: ease 1s;
-    transition: ease 1s;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
 /*
@@ -388,18 +387,14 @@ img {
     text-align: center;
 }
 .about__img{
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-    width: 100px;
-    height: 100px;
-    /*background-color: var(--white-color);*/
-    border-radius: 140px;
-    overflow: hidden;
-}
-.about__img img{
-    width: 100px;
-}
+    justify-self: center;
+  }
+  .about__img img{
+    width: 200px;
+    border-radius: .5rem;
+    padding-top: 1px;
+  }
+  
 .about__subtitle{
     font-size: var(--h2-font-size);
     color: var(--moony-color);
@@ -432,7 +427,7 @@ img {
 }
 
 #about-02 {
-    background-color: #F5F5F5;
+    background-color:var(--white-color);
 }
 
 .about-item {
@@ -445,6 +440,7 @@ img {
 .about-item i {
     font-size: 42px;
     margin: 0;
+    color: var(--moony-color);
 }
 
 .about-item h3 {
@@ -455,7 +451,7 @@ img {
 .about-item>hr {
     width: 45px;
     height: 3px;
-    background-color: #F4C613;
+    background-color:var(--moony-color);
     margin: 0 auto;
     border: none;
 }
@@ -466,13 +462,12 @@ img {
 
 /*Hover State*/
 .about-item:hover {
-    background-color: #F4C613;
+    background-color:var(--moony-color);
 }
-
 .about-item:hover i,
 .about-item:hover h3,
 .about-item:hover p {
-    color: #F5F5F5;
+    color: var(--white-color);
 }
 .about-item:hover i {
     transform: translateY(-15px);
@@ -485,8 +480,44 @@ img {
     transition: all 400ms ease-in-out;
 }
 
-
-
+/*
+====================================
+|   | Skill Section
+====================================
+*/
+.skills__container{
+    row-gap: 2rem;
+}
+.skills__subtitle{
+    color: var(--black-color);
+    margin-bottom: var(--mb-3);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.skills__name{
+    display: inline-block;
+    font-size: 1rem;
+    margin-right: var(--mb-2);
+    margin-bottom: var(--mb-3);
+    padding: .25rem .5rem;
+    background-color: var(--moony-color);
+    border-radius: .25rem;
+    color: var(--black-color);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.skills__name:hover{
+    background-color: var(--black-color);
+    color: var(--moony-color);
+}
+.skills__img img{
+    border-radius: .5rem;
+}
+#jquery{
+    text-transform: none !important;
+    font-size: 1rem;
+    font-weight: 500;
+}
 
 
 
@@ -754,9 +785,11 @@ img {
 }
 
 #about-item-right{
-    -webkit-animation-delay: 2.5s;
-    animation-delay: 2.5s;
+    -webkit-animation-delay: 2.25s;
+    animation-delay: 2.25s;
 }
+
+
 /*
 ====================================
 |   |   |
