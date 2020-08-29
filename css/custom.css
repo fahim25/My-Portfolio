@@ -386,7 +386,6 @@ img {
     row-gap: 2rem;
     text-align: center;
 }
-
 .about__img{
     justify-self: center;
     margin-top: 0;
@@ -395,12 +394,11 @@ img {
     width: 300px;
     border-radius: .5rem;
     padding-top: 1px;
-    background-color: var(--black-color);
   }
   
 .about__subtitle{
     font-size: var(--h2-font-size);
-    color: var(--moony-color);
+    color: var(--black-color);
     margin-bottom: var(--mb-1);
 }
 .about__text{
@@ -515,6 +513,7 @@ img {
 }
 .skills__img img{
     border-radius: .5rem;
+    margin-top: var(--mb-3);
 }
 #jquery{
     text-transform: none !important;
