@@ -3,12 +3,31 @@
 |   |   |   | Preloader
 ====================================
 */
-
 $(window).on('load', function () { 
     $('#status').fadeOut();
     $('#preloader').delay(250).fadeOut('slow');
 });
-
+/*
+====================================
+|   |   |   | Portfolio
+====================================
+*/
+ $(window).on('load', function () {
+     //Initialize Isotope
+     $('#isotope-container').isotope({});
+     //filters item on button click
+     $('#isotope-filters').on('click', 'button', function () {
+         //get filter value
+         var filterValue = $(this).attr('data-filter');
+         //filter portfolio items
+         $('#isotope-container').isotope({
+             filter: filterValue
+         });
+         //Active button
+         $('#isotope-filters').find('.active').removeClass('active');
+         $(this).addClass('active');
+     });
+});
 /*
 ====================================
 |   |   | Menu Show
@@ -79,18 +98,6 @@ sr.reveal('.home__data', {})
 sr.reveal('.button', {delay: 200})
 sr.reveal('.home__social', {delay: 250})
 
-
-/*
-====================================
-|   |SCROLL About
-====================================
-*/
-sr.reveal('.about__img', {delay: 450})
-sr.reveal('.about__subtitle', {delay: 200})
-sr.reveal('.about__profession', {delay: 300})
-sr.reveal('.about__text', {delay: 400})
-sr.reveal('.about__social-icon', {delay: 500, interval: 100})
-
 /*
 ====================================
 |   |SCROLL Skills
@@ -99,33 +106,14 @@ sr.reveal('.about__social-icon', {delay: 500, interval: 100})
 sr.reveal('.skills__subtitle', {})
 sr.reveal('.skills__name', {distance: '20px', delay: 50, interval: 100})
 sr.reveal('.skills__img', {delay: 400})
-
-/*
-====================================
-|   |SCROLL Work
-====================================
-*/
-sr.reveal('.portfolio__img', {interval: 200})
-
-/*
-====================================
-|   |SCROLL Contact
-====================================
-*/
-sr.reveal('.contact__subtitle', {})
-sr.reveal('.contact__text', {interval: 200})
-sr.reveal('.contact__input', {delay: 400})
-sr.reveal('.contact__button', {delay: 600})
-
 /*
 ====================================
 |   |   |   | Animation
 ====================================
 */
-$(window).on('load', function () {
-    $('#about-item-left').addClass('animated fadeInLeft');
-    $('#about-item-mid').addClass('animated fadeInUp');
-    $('#about-item-right').addClass('animated fadeInRight');
+$(function () {
+    new WOW().init(); 
 });
+
 
 
