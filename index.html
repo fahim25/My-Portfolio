@@ -1,172 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <!--Animate CSS-->
-    <link rel="stylesheet" href="css/animate.css">
-    <!--Font Awesome-->
-    <link href="css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css">
-    
-    <!--Favicon-->
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
-    <title>Fahim's Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<!--Resposive CSS-->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<!--Animate CSS-->
+	<link rel="stylesheet" href="css/animate.css">
+	<!--Font Awesome-->
+	<link href="css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="css/fontawesome.min.css" rel="stylesheet" type="text/css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<title>Fahim's Portfolio</title>
 </head>
+
 <body>
-    
-    <!--Preloader-->
-    <div id="preloader">
-        <div id="status">
-            &nbsp;
-        </div>
-    </div>
-    <!-- HEADER -->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#home" class="nav__logo">F M</a>
-            </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
+	<!--Preloader-->
+	<div id="preloader">
+		<div id="status">
+			&nbsp;
+		</div>
+	</div>
+	<!-- HEADER -->
+	<header class="l-header">
+		<nav class="nav bd-grid">
+			<div>
+				<a href="#home" class="nav__logo">F M</a>
+			</div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="fa fa-bars"></i>
-            </div>
-        </nav>
-    </header>
-    <!-- END of HEADER -->
-    <main class="l-main">
-        <!-- HOME -->
-        <section class="home" id="home">
-            <div class="home__container bd-grid">
-                <div class="home__data">
-                    <h1 class="home__title">Hi, <br> I'm <span class="home__title-color">Fahim Muntasir</span><br>I'm a web developer.</h1>
-                    <a href="#" class="button">View My Work</a>
-                </div>
-                <div class="home__social">
-                    <a href="https://linkedin.com/in/mohammad-fahim-muntasir" class="home__social-icon"><i class='fab fa-linkedin-in'></i></a>
-                    <a href="https://github.com/fahim25" class="home__social-icon"><i class='fab fa-github'></i></a>
-                    <a href="https://github.com/fahim25" class="home__social-icon"><i class='fab fa-twitter'></i></a>
-                </div>
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-link" id="home_scroll"><i class="fa fa-arrow-up"></i>Scroll down</a>
-                        
-                </div>
-            </div>
-        </section>
-        <!--END of HOME -->
-        
-        <!--About SEction-->
-        <section class="about section" id="about">
-            <h2 class="section-title"><strong>About</strong></h2>
-        <!--About part One-->
-        <div id="about-02">
-            <div class="content-box-md">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4" id="about-item-left">
-                            <div class="about-item text-center">
-                                <i class="fa fa-rocket"></i>
-                                <h3>Fast</h3>
-                                <hr>
-                                <p>Lorem ipsum dolor amet, consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4" id="about-item-mid">
-                            <div class="about-item text-center">
-                                <i class="fa fa-mobile-alt"></i>
-                                <h3>Responsive</h3>
-                                <hr>
-                                <p>Lorem ipsum dolor amet, consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4" id="about-item-right">
-                            <div class="about-item text-center">
-                                <i class="fa fa-lightbulb"></i>
-                                <h3>Intuitive</h3>
-                                <hr>
-                                <p>Lorem ipsum dolo met, consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--End of About One Section-->
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+					<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+					<li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+					<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+				</ul>
+			</div>
 
-        <!--About part 2-->
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="img/about/fahim.png" class="img-fluid" alt="about img">
-                </div>
+			<div class="nav__toggle" id="nav-toggle">
+				<i class="fa fa-bars"></i>
+			</div>
+		</nav>
+	</header>
+	<!-- END of HEADER -->
+	<main class="l-main">
+		<!-- HOME -->
+		<section class="home" id="home">
+			<div class="home__container bd-grid">
+				<div class="home__data">
+					<h1 class="home__title">Hi, <br> I'm <span class="home__title-color">Fahim Muntasir</span><br>I'm a web developer.</h1>
+					<a href="#portfolio" class="button">View My Work</a>
+				</div>
+				<div class="home__social">
+					<a href="https://linkedin.com/in/mohammad-fahim-muntasir" class="home__social-icon"><i class='fab fa-linkedin-in'></i></a>
+					<a href="https://github.com/fahim25" class="home__social-icon"><i class='fab fa-github'></i></a>
+					<a href="https://github.com/fahim25" class="home__social-icon"><i class='fab fa-twitter'></i></a>
+				</div>
+				<div class="home__scroll">
+					<a href="#about" class="home__scroll-link" id="home_scroll"><i class="fa fa-arrow-up"></i>Scroll down</a>
 
-                <div>
-                    <h2 class="about__subtitle">Who Is This Guy?!</h2>
-                    <span class="about__profession">Web developer</span>
-                    <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
+				</div>
+			</div>
+		</section>
+		<!--END of HOME -->
 
-                    <div class="about__social">
-                        <a href="#" class="about__social-icon"><i class='fab fa-linkedin-in' ></i></a>
-                        <a href="#" class="about__social-icon"><i class='fab fa-github' ></i></a>
-                        <a href="https://github.com/fahim25" class="about__social-icon"><i class='fab fa-twitter'></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-         <!--End of About Section-->
+		<!--About SEction-->
+		<section class="about section" id="about">
+			<h2 class="section-title"><strong>About</strong></h2>
+			<!--About part One-->
+			<div id="about-02">
+				<div class="content-box-md">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 col-sm-4 wow slideInLeft" data-wow-duration="2s" id="about-item-left">
+								<div class="about-item text-center">
+									<i class="fa fa-rocket"></i>
+									<h3>Fast</h3>
+									<hr>
+									<p>Lorem ipsum dolor amet, consectetur adipisicing elit.
+									</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-duration="2s" id="about-item-mid">
+								<div class="about-item text-center">
+									<i class="fa fa-mobile-alt"></i>
+									<h3>Responsive</h3>
+									<hr>
+									<p>Lorem ipsum dolor amet, consectetur adipisicing elit.</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 wow slideInRight" data-wow-duration="2s" id="about-item-right">
+								<div class="about-item text-center">
+									<i class="fa fa-lightbulb"></i>
+									<h3>Intuitive</h3>
+									<hr>
+									<p>Lorem ipsum dolo met, consectetur adipisicing elit.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--End of About One Section-->
 
-         <!--Skill Section-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title"><strong>Skills</strong></h2>
+			<!--About part 2-->
+			<div class="about__container bd-grid">
+				<div class="about__img">
+					<img src="img/about/fahim.png" class="img-fluid wow slideInLeft" data-wow-duration="2s" alt="about img">
+				</div>
 
-            <div class="skills__container bd-grid">
-                <div class="skills__box">
-                    <!--Part One-->
-                    <h3 class="skills__subtitle"><super>Development</super></h3>
-                    <span class="skills__name"><i class="fab fa-html5 3x"></i>&nbsp;Html </span>
-                    <span class="skills__name"><i class="fab fa-css3 3x"></i>&nbsp;Css </span>
-                    <span class="skills__name"><i class="fab fa-js 3x"></i>&nbsp;Javascript</span>
-                    <span class="skills__name"><i class="fab fa-bootstrap 3x"></i>&nbsp;bootstrap</span>
-                    <span class="skills__name" id="jquery"><i class="fab fa-js 3x"></i>&nbsp;jQuery</span>
-                    <span class="skills__name"><i class="fab fa-css3 3x"></i>&nbsp;animate.css</span>
-                    
-                    <!--Part Two-->
-                    <h3 class="skills__subtitle">Utilities</h3>
-                    <span class="skills__name"><i class="fa fa-paint-brush 3x"></i>&nbsp;Balsamiq</span>
-                    <span class="skills__name"><i class="fab fa-font-awesome 3x"></i>&nbsp;Font-Awesome</span>
-                    <span class="skills__name"><i class="fab fa-github 3x"></i>&nbsp;github</span>
-                </div>
+				<div>
+					<h2 class="about__subtitle wow fadeInDown" data-wow-duration="2s">Who Is This Guy?!</h2>
+					<span class="about__profession wow slideInRight" data-wow-duration="2.1s">Web developer</span>
+					<p class="about__text wow slideInRight" data-wow-duration="2.25s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
 
-                <div class="skills__img">
-                    <img src="img/skill/laptop.jpg" alt="img" class="img-fluid">
-                </div>
-            </div>
-        </section>
-         <!--End of Skill Section-->
+					<div class="about__social wow fadeInUp" data-wow-duration="2s">
+						<a href="#" class="about__social-icon"><i class='fab fa-linkedin-in'></i></a>
+						<a href="#" class="about__social-icon"><i class='fab fa-github'></i></a>
+						<a href="https://github.com/fahim25" class="about__social-icon"><i class='fab fa-twitter'></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End of About Section-->
 
-    <!--jQuery-->
-    <script src="js/jquery.min.js"></script>
-    <!--Bootstrap.js-->
-    <script src="js/bootstrap.min.js"></script>
-    <!--Scroll Reveal-->
-    <script src="js/scrollreveal.min.js"></script>
-    <!-- Isotope JS -->
-    <script src="js/isotope.pkgd.min.js"></script>
-    <!--Custom Js-->
-    <script src="js/main.js"></script>
+		<!--Skill Section-->
+		<section class="skills section" id="skills">
+			<h2 class="section-title"><strong>Skills</strong></h2>
+
+			<div class="skills__container bd-grid">
+				<div class="skills__box">
+					<!--Part One-->
+					<h3 class="skills__subtitle">
+						<super>Development</super>
+					</h3>
+					<span class="skills__name"><i class="fab fa-html5 3x"></i>&nbsp;Html </span>
+					<span class="skills__name"><i class="fab fa-css3 3x"></i>&nbsp;Css </span>
+					<span class="skills__name"><i class="fab fa-js 3x"></i>&nbsp;Javascript</span>
+					<span class="skills__name"><i class="fab fa-bootstrap 3x"></i>&nbsp;bootstrap</span>
+					<span class="skills__name" id="jquery"><i class="fab fa-js 3x"></i>&nbsp;jQuery</span>
+					<span class="skills__name"><i class="fab fa-css3 3x"></i>&nbsp;animate.css</span>
+
+					<!--Part Two-->
+					<h3 class="skills__subtitle">Utilities</h3>
+					<span class="skills__name"><i class="fa fa-paint-brush 3x"></i>&nbsp;Balsamiq</span>
+					<span class="skills__name"><i class="fab fa-font-awesome 3x"></i>&nbsp;Font-Awesome</span>
+					<span class="skills__name"><i class="fab fa-github 3x"></i>&nbsp;github</span>
+				</div>
+
+				<div class="skills__img">
+					<img src="img/skill/laptop.jpg" alt="img" class="img-fluid">
+				</div>
+			</div>
+		</section>
+		<!--End of Skill Section-->
+
+		<!-- portfolio Section -->
+		<section id="portfolio" class="portfolio section">
+			<div class="content-box-md">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 wow slideInLeft" data-wow-duration="2s">
+							<div class="vertical-heading">
+								<h5>Find My Work</h5>
+								<h2>My <br>Amazing<strong> Work</strong></h2>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<!--Portfolio Item filters-->
+							<div id="isotope-filters">
+								<button class="btn active" data-filter="*"><span>All</span></button>
+								<button class="btn" data-filter=".bootstrap"><span>Bootstrap</span></button>
+								<button class="btn" data-filter=".web"><span>React-JS</span></button>
+								<button class="btn" data-filter=".mobile"><span>Laravel</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Portfolio Items Warpper-->
+				<div id="portfolio-warpper" class="wow slideInUp" data-wow-duration="1.5s">
+					<div class="container-fluid">
+						<div class="row no-gaps">
+							<div id="isotope-container">
+								<div class="col-md-3 col-sm-6 col-xs-12 bootstrap">
+									<!-- Portfolio Item 1-->
+									<div class="portfolio-item">
+										<img src="img/portfolio/001.jpg" alt="portfolio 01" class="img-responsive">
+										<div class="portfolio-item-overlay">
+											<div class="portfolio-item-details text-center">
+												<!--Item header-->
+												<h3>LOGO [<a href="">View</a>]</h3>
+												<!--Item Strips-->
+												<span></span>
+												<!--Item Descriptiopn-->
+												<p>Desktop, Desigh</p>
+											</div>
+										</div>
+									</div>
+									<!-- End Portfolio Item 1-->
+								</div>
+								<div class="col-md-3 col-sm-6 col-xs-12 bootstrap">
+									<!-- Portfolio Item 2-->
+									<div class="portfolio-item">
+										<div class="portfolio-item">
+											<img src="img/portfolio/002.jpg" alt="portfolio 01" class="img-responsive">
+											<div class="portfolio-item-overlay">
+												<div class="portfolio-item-details text-center">
+													<!--Item header-->
+													<h3>LOGO [<a href="">View</a>]</h3>
+													<!--Item Strips-->
+													<span></span>
+													<!--Item Descriptiopn-->
+													<p>Desktop, Desigh</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- End Portfolio Item 2-->
+								</div>
+								<div class="col-md-3 col-sm-6 col-xs-12 bootstrap">
+									<!-- Portfolio Item 3-->
+									<div class="portfolio-item">
+										<img src="img/portfolio/003.jpg" alt="portfolio 01" class="img-responsive">
+										<div class="portfolio-item-overlay">
+											<div class="portfolio-item-details text-center">
+												<!--Item header-->
+												<h3>LOGO [<a href="">View</a>]</h3>
+												<!--Item Strips-->
+												<span></span>
+												<!--Item Descriptiopn-->
+												<p>Desktop, Desigh</p>
+											</div>
+										</div>
+									</div>
+									<!-- End Portfolio Item 3-->
+								</div>
+								<div class="col-md-3 col-sm-6 col-xs-12 logo bootstrap">
+									<!-- Portfolio Item 4-->
+									<div class="portfolio-item">
+										<img src="img/portfolio/004.jpg" alt="portfolio 01" class="img-responsive">
+										<div class="portfolio-item-overlay">
+											<div class="portfolio-item-details text-center">
+												<!--Item header-->
+												<h3>LOGO [<a href="">View</a>]</h3>
+												<!--Item Strips-->
+												<span></span>
+												<!--Item Descriptiopn-->
+												<p>Desktop, Desigh</p>
+											</div>
+										</div>
+									</div>
+									<!-- End Portfolio Item 4-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--End Portfolio Items Warpper-->
+		</section>
+		<!--End Portfolio Section-->
+
+		<!--jQuery-->
+		<script src="js/jquery.min.js"></script>
+		<!--Bootstrap.js-->
+		<script src="js/bootstrap.min.js"></script>
+		<!--Scroll Reveal-->
+		<script src="js/scrollreveal.min.js"></script>
+		<!-- Isotope JS -->
+		<script src="js/isotope.pkgd.min.js"></script>
+		<!--WOW Js-->
+		<script src="js/wow.min.js"></script>
+		<!--Custom Js-->
+		<script src="js/main.js"></script>
 </body>
+
 </html>
