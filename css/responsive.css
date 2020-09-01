@@ -105,10 +105,35 @@
 	}
 
 	.home__title {
-		padding-bottom: 40px;
+		padding-bottom: 20px;
+		margin-top: 140px;
+	}
+	.home__social {
+		margin-top: 30px;
+		
+	}
+	/* .home__data{
+		text-align: center;
+	}
+	.home__social{
+		text-align: center;
+	}
+	.home__scroll{
+		text-align: center;
+	} */
+	.home__scroll,
+	.home__scroll i{
+		animation-direction: 1.5s;  
+	}
+	.home__scroll{
+		-webkit-animation-delay: 2s;
+		animation-delay: 2s;
+	}
+	.home__scroll i{
+		-webkit-animation-delay: .5s;
+		animation-delay: 2.5s;
 	}
 }
-
 /*
 ====================================
 |   | For small devices
@@ -217,6 +242,15 @@
 	}
 }
 
+@media(max-width:320px){
+	
+	.home__title {
+		font-size: 20px;
+	}
+	.home__social {
+		padding: 0;
+	}
+}
 /*
 ======================================
 |Media Queries for mobile rotate mode
@@ -260,6 +294,7 @@
 	.home__social {
 		text-align: center;
 		font-size: 1rem;
+		padding: 0;
 	}
 
 	.home__title {
@@ -268,7 +303,7 @@
 	}
 
 	.home__scroll {
-		font-size: 12px;
+		font-size: 14px;
 		margin: 0;
 		padding: 0;
 		text-align: center;
