@@ -29,6 +29,61 @@ $(window).on('load', function () {
      });
 });
 /*
+-----------------------------
+|   | Navbar
+-----------------------------
+*/
+$(function () {
+    showHideNav();
+    $(window).scroll(function () {
+        showHideNav();
+    });
+
+    function showHideNav() {
+        if ($(window).scrollTop() > 50) {
+            $('.nav').css({
+                'margin-top':'0',
+                'opacity':'1',
+            
+            });
+            
+            $('.nav').css({
+                'background-color':'rgba(255, 255, 255, .5);'
+            });
+			
+			//For nav header
+            $('.dab').css({
+                'margin-top':'0',
+                'opacity':'1',
+            
+            });
+            
+            $('.dab').css({
+                'background-color':'rgba(255, 255, 255, .5);'
+            });
+
+        } else {
+            $('.nav').css({
+                'opacity':'0' 
+            });
+            
+            $('.nav').css({
+                'background-color':'rgba(255, 255, 255, .5);'
+            });
+			
+			//For nav header
+            $('.dab').css({
+                'opacity':'0' 
+            });
+            
+            $('.dab').css({
+                'background-color':'rgba(255, 255, 255, .5);'
+            });
+            
+        }
+    }
+});
+/*
 ====================================
 |   |   | Menu Show
 ====================================
@@ -115,5 +170,9 @@ $(function () {
     new WOW().init(); 
 });
 
+$(window).on('load', function () {
+    $('.home__scroll').addClass('animated fadeInDown');
+    $('.home__scroll i').addClass('animated fadeInDown infinite');
+});
 
 
