@@ -40,7 +40,7 @@ $(function () {
     });
 
     function showHideNav() {
-        if ($(window).scrollTop() > 50) {
+        if ($(window).scrollTop() > 70) {
             $('.nav').css({
                 'margin-top':'0',
                 'opacity':'1',
