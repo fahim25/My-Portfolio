@@ -112,15 +112,6 @@
 		margin-top: 30px;
 		
 	}
-	/* .home__data{
-		text-align: center;
-	}
-	.home__social{
-		text-align: center;
-	}
-	.home__scroll{
-		text-align: center;
-	} */
 	.home__scroll,
 	.home__scroll i{
 		animation-direction: 1.5s;  
@@ -294,24 +285,24 @@
 	.home__social {
 		text-align: center;
 		font-size: 1rem;
-		padding: 0;
+		padding: 10px 0 0 0;
 	}
 
 	.home__title {
 		font-size: 18px;
-		padding-top: 75px;
+		padding-top: 50px;
 	}
 
 	.home__scroll {
 		font-size: 14px;
 		margin: 0;
-		padding: 0;
+		padding-top: 10px;
 		text-align: center;
 	}
 
 	.home__scroll-link {
 		transform: rotate(270deg);
-		padding: 0 0 0 145px;
+		padding: 0 30px 0 145px;
 
 	}
 
