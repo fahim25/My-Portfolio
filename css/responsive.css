@@ -1,10 +1,5 @@
 /*
 ====================================
-|   |   | Media Queries
-====================================
-*/
-/*
-====================================
 |   | For Tabs
 ====================================
 */
@@ -108,23 +103,28 @@
 		padding-bottom: 20px;
 		margin-top: 140px;
 	}
+
 	.home__social {
 		margin-top: 30px;
-		
+
 	}
+
 	.home__scroll,
-	.home__scroll i{
-		animation-direction: 1.5s;  
+	.home__scroll i {
+		animation-direction: 1.5s;
 	}
-	.home__scroll{
+
+	.home__scroll {
 		-webkit-animation-delay: 2s;
 		animation-delay: 2s;
 	}
-	.home__scroll i{
+
+	.home__scroll i {
 		-webkit-animation-delay: .5s;
 		animation-delay: 2.5s;
 	}
 }
+
 /*
 ====================================
 |   | For small devices
@@ -222,7 +222,15 @@
 		font-size: 28px;
 	}
 
+	.content-box-md {
+		padding: 20px 0;
+	}
+
 	/*Portfolio*/
+	#portfolio.portfolio.section {
+		padding-top: 5px;
+	}
+
 	#isotope-filters {
 		text-align: center;
 	}
@@ -233,15 +241,17 @@
 	}
 }
 
-@media(max-width:320px){
-	
+@media(max-width:320px) {
+
 	.home__title {
 		font-size: 20px;
 	}
+
 	.home__social {
 		padding: 0;
 	}
 }
+
 /*
 ======================================
 |Media Queries for mobile rotate mode
@@ -290,7 +300,7 @@
 
 	.home__title {
 		font-size: 18px;
-		padding-top: 50px;
+		padding-top: 42px;
 	}
 
 	.home__scroll {
@@ -302,7 +312,7 @@
 
 	.home__scroll-link {
 		transform: rotate(270deg);
-		padding: 0 30px 0 145px;
+		padding: 0 24px 0 145px;
 
 	}
 
