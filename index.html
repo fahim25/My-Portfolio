@@ -11,10 +11,14 @@
 	<!--Resposive CSS-->
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<!--Animate CSS-->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<!--Font Awesome-->
 	<link href="css/all.min.css" rel="stylesheet" type="text/css">
 	<link href="css/fontawesome.min.css" rel="stylesheet" type="text/css">
+
+	<link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600;700&display=swap">
+	<link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap">
+	<link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
 
 	<!--Favicon-->
 	<link rel="shortcut icon" href="img/favicon/favicon.ico">
@@ -52,7 +56,6 @@
 		</nav>
 	</header>
 	<!-- END of HEADER -->
-	<main class="l-main">
 		<!-- HOME -->
 		<section class="home" id="home">
 			<!--Background Video-->
@@ -72,7 +75,7 @@
 				<div class="home__social">
 					<a href="https://linkedin.com/in/mohammad-fahim-muntasir" class="home__social-icon"><i class='fab fa-linkedin-in'></i></a>
 					<a href="https://github.com/fahim25" class="home__social-icon"><i class='fab fa-github'></i></a>
-					<a href="https://github.com/fahim25" class="home__social-icon"><i class='fab fa-twitter'></i></a>
+					<a href="https://www.instagram.com/_fah_im/" class="home__social-icon"><i class='fab fa-instagram'></i></a>
 				</div>
 				<div class="home__scroll">
 					<a href="#about" class="home__scroll-link" id="home_scroll"><i class="fa fa-arrow-up"></i>Scroll down</a>
@@ -127,15 +130,16 @@
 					<img src="img/about/fahim.png" class="img-fluid wow slideInLeft" data-wow-duration="2s" alt="about img">
 				</div>
 
-				<div>
+				<div id="about-fahim">
 					<h2 class="about__subtitle wow fadeInDown" data-wow-duration="2s">Who Is This Guy?!</h2>
 					<span class="about__profession wow slideInRight" data-wow-duration="2.1s">Web developer</span>
-					<p class="about__text wow slideInRight" data-wow-duration="2.25s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
+					<p class="about__text wow slideInRight" data-wow-duration="2.25s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.<br><br><span><i class="fa fa-envelope-open" style="color: #F4C613;"><a style="color: #000;">&nbsp;faimmuntasir201@gmail.com</a></i></span></p>
 
 					<div class="about__social wow fadeInUp" data-wow-duration="2s">
-						<a href="#" class="about__social-icon"><i class='fab fa-linkedin-in'></i></a>
-						<a href="#" class="about__social-icon"><i class='fab fa-github'></i></a>
-						<a href="https://github.com/fahim25" class="about__social-icon"><i class='fab fa-twitter'></i></a>
+						<a href="https://linkedin.com/in/mohammad-fahim-muntasir" class="about__social-icon"><i class='fab fa-linkedin-in'></i></a>
+						<a href="https://github.com/fahim25" class="about__social-icon"><i class='fab fa-github'></i></a>
+						<a href="https://www.instagram.com/_fah_im/" class="about__social-icon"><i class='fab fa-instagram'></i></a>
+						<a href="mailto:fahimmuntasir201@gmail.com" class="about__social-icon"><i class="fa fa-envelope-open"></i></a>
 					</div>
 				</div>
 			</div>
@@ -157,13 +161,16 @@
 					<span class="skills__name"><i class="fab fa-js 3x"></i>&nbsp;Javascript</span>
 					<span class="skills__name"><i class="fab fa-bootstrap 3x"></i>&nbsp;bootstrap</span>
 					<span class="skills__name" id="jquery"><i class="fab fa-js 3x"></i>&nbsp;jQuery</span>
-					<span class="skills__name"><i class="fab fa-css3 3x"></i>&nbsp;animate.css</span>
+					<span class="skills__name"><i class="fab fa-laravel 4x"></i>&nbsp;Laravel</span>
+					<span class="skills__name"><i class="fab fa-react 3x"></i>&nbsp;React Js</span>
+
 
 					<!--Part Two-->
 					<h3 class="skills__subtitle">Utilities</h3>
 					<span class="skills__name"><i class="fa fa-paint-brush 3x"></i>&nbsp;Balsamiq</span>
 					<span class="skills__name"><i class="fab fa-font-awesome 3x"></i>&nbsp;Font-Awesome</span>
 					<span class="skills__name"><i class="fab fa-github 3x"></i>&nbsp;github</span>
+					<span class="skills__name"><i class="fab fa-css3 3x"></i>&nbsp;animate.css</span>
 				</div>
 
 				<div class="skills__img">
@@ -189,8 +196,8 @@
 							<div id="isotope-filters">
 								<button class="btn active" data-filter="*"><span>All</span></button>
 								<button class="btn" data-filter=".bootstrap"><span>Bootstrap</span></button>
-								<button class="btn" data-filter=".web"><span>React-JS</span></button>
-								<button class="btn" data-filter=".mobile"><span>Laravel</span></button>
+								<button class="btn" data-filter=".react"><span>React-JS</span></button>
+								<button class="btn" data-filter=".laravel"><span>Laravel</span></button>
 							</div>
 						</div>
 					</div>
@@ -201,35 +208,37 @@
 						<div class="row no-gaps">
 							<div id="isotope-container">
 								<div class="col-md-3 col-sm-6 col-xs-12 bootstrap">
-									<!-- Portfolio Item 1-->
+									<!-- Portfolio Item 1 SOLO-->
 									<div class="portfolio-item">
-										<img src="img/portfolio/001.jpg" alt="portfolio 01" class="img-responsive">
+										<img src="img/portfolio/001.png" alt="portfolio 01" class="img-fluid">
 										<div class="portfolio-item-overlay">
 											<div class="portfolio-item-details text-center">
 												<!--Item header-->
-												<h3>LOGO [<a href="">View</a>]</h3>
+												<h3>Website [<a href=" https://fahim25.github.io/Solo-Responsive-Single-page-website/"> Live View </a>]</h3>
 												<!--Item Strips-->
 												<span></span>
 												<!--Item Descriptiopn-->
-												<p>Desktop, Desigh</p>
+												<p>Html, Css, Bootstrap, jQuery</p>
+												<p><a href="https://github.com/fahim25/Solo-Responsive-Single-page-website">View Source</a></p>
 											</div>
 										</div>
 									</div>
 									<!-- End Portfolio Item 1-->
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-12 bootstrap">
-									<!-- Portfolio Item 2-->
+									<!-- Portfolio Item 2 LOSO-->
 									<div class="portfolio-item">
 										<div class="portfolio-item">
-											<img src="img/portfolio/002.jpg" alt="portfolio 01" class="img-responsive">
+											<img src="img/portfolio/002.png" alt="portfolio 02" class="img-fluid">
 											<div class="portfolio-item-overlay">
 												<div class="portfolio-item-details text-center">
 													<!--Item header-->
-													<h3>LOGO [<a href="">View</a>]</h3>
+													<h3>Website [<a href="https://fahim25.github.io/Responsive-single-page-website/"> Live View </a>]</h3>
 													<!--Item Strips-->
 													<span></span>
 													<!--Item Descriptiopn-->
-													<p>Desktop, Desigh</p>
+													<p>Html, Css, Bootstrap, jQuery</p>
+													<p><a href="https://github.com/fahim25/Responsive-single-page-website">View Source</a></p>
 												</div>
 											</div>
 										</div>
@@ -237,38 +246,115 @@
 									<!-- End Portfolio Item 2-->
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-12 bootstrap">
-									<!-- Portfolio Item 3-->
+									<!-- Portfolio Item 3 Vesco-->
 									<div class="portfolio-item">
-										<img src="img/portfolio/003.jpg" alt="portfolio 01" class="img-responsive">
+										<img src="img/portfolio/003.png" alt="portfolio 03" class="img-fluid">
 										<div class="portfolio-item-overlay">
 											<div class="portfolio-item-details text-center">
 												<!--Item header-->
-												<h3>LOGO [<a href="">View</a>]</h3>
+												<h3>Website [<a href="https://github.com/fahim25/Vesco-Responsive-Website"> Live View </a>]</h3>
 												<!--Item Strips-->
 												<span></span>
 												<!--Item Descriptiopn-->
-												<p>Desktop, Desigh</p>
+												<p>Html, Css, Bootstrap, jQuery</p>
+												<p><a href="https://github.com/fahim25/Vesco-Responsive-Website">View Source</a></p>
 											</div>
 										</div>
 									</div>
 									<!-- End Portfolio Item 3-->
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-12 logo bootstrap">
-									<!-- Portfolio Item 4-->
+									<!-- Portfolio Item 4 My portfolio-->
 									<div class="portfolio-item">
-										<img src="img/portfolio/004.jpg" alt="portfolio 01" class="img-responsive">
+										<img src="img/portfolio/004.png" alt="portfolio 04" class="img-fluid">
 										<div class="portfolio-item-overlay">
 											<div class="portfolio-item-details text-center">
 												<!--Item header-->
-												<h3>LOGO [<a href="">View</a>]</h3>
+												<h3>Website [<a href="https://famimmuntasir.me"> Live View </a>]</h3>
 												<!--Item Strips-->
 												<span></span>
 												<!--Item Descriptiopn-->
-												<p>Desktop, Desigh</p>
+												<p>Html, Css, Bootstrap, jQuery</p>
+												<p><a href="https://github.com/fahim25/My-Portfolio">View Source</a></p>
 											</div>
 										</div>
 									</div>
-									<!-- End Portfolio Item 4-->
+									<!-- End Portfolio Item 5-->
+								</div>
+								<div class="col-md-3 col-sm-6 col-xs-12  bootstrap">
+									<!-- Portfolio Item 5 Boipoka-->
+									<div class="portfolio-item">
+										<img src="img/portfolio/005.png" alt="portfolio 04" class="img-fluid">
+										<div class="portfolio-item-overlay">
+											<div class="portfolio-item-details text-center">
+												<!--Item header-->
+												<h3>Webapp [<a href="https://fahim25.github.io/BoiPoka--Bootstrap-Practice/"> Live View </a>]</h3>
+												<!--Item Strips-->
+												<span></span>
+												<!--Item Descriptiopn-->
+												<p>Html, Css, Bootstrap</p>
+												<p><a href="https://github.com/fahim25/BoiPoka--Bootstrap-Practice">View Source</a></p>
+											</div>
+										</div>
+									</div>
+									<!-- End Portfolio Item 5-->
+								</div>
+
+								<div class="col-md-3 col-sm-6 col-xs-12 react">
+									<!-- Portfolio Item 6-->
+									<div class="portfolio-item">
+										<img src="img/portfolio/006.jpg" alt="portfolio 04" class="img-fluid">
+										<div class="portfolio-item-overlay">
+											<div class="portfolio-item-details text-center">
+												<!--Item header-->
+												<h3>Webapp [<a >Still Woriking On It</a>]</h3>
+												<!--Item Strips-->
+												<span></span>
+												<!--Item Descriptiopn-->
+												<p>HTML, CSS, React</p>
+												<p><a >View Source</a></p>
+											</div>
+										</div>
+									</div>
+									<!-- End Portfolio Item 6-->
+								</div>
+
+								<div class="col-md-3 col-sm-6 col-xs-12 laravel">
+									<!-- Portfolio Item 7-->
+									<div class="portfolio-item">
+										<img src="img/portfolio/007.jpg" alt="portfolio 04" class="img-fluid">
+										<div class="portfolio-item-overlay">
+											<div class="portfolio-item-details text-center">
+												<!--Item header-->
+												<h3>Webapp [<a >Still Woriking On It</a>]</h3>
+												<!--Item Strips-->
+												<span></span>
+												<!--Item Descriptiopn-->
+												<p>Bootstrap, Php, laravel</p>
+												<p><a > View Source</a></p>
+											</div>
+										</div>
+									</div>
+									<!-- End Portfolio Item 7-->
+								</div>
+
+								<div class="col-md-3 col-sm-6 col-xs-12 laravel">
+									<!-- Portfolio Item 8-->
+									<div class="portfolio-item">
+										<img src="img/portfolio/008.jpg" alt="portfolio 04" class="img-fluid">
+										<div class="portfolio-item-overlay">
+											<div class="portfolio-item-details text-center">
+												<!--Item header-->
+												<h3>Webapp [<a>Still Woriking On It</a>]</h3>
+												<!--Item Strips-->
+												<span></span>
+												<!--Item Descriptiopn-->
+												<p>Bootstrap, Php, laravel</p>
+												<p><a> View Source</a></p>
+											</div>
+										</div>
+									</div>
+									<!-- End Portfolio Item 8-->
 								</div>
 							</div>
 						</div>
@@ -278,6 +364,67 @@
 			<!--End Portfolio Items Warpper-->
 		</section>
 		<!--End Portfolio Section-->
+
+		<!-- Contact -->
+		<section class="contact section" id="contact">
+			<div class="content-box-sm">
+				<div class="container">
+					<div class="row">
+						<!-- Left Side-->
+						<div class="col-md-12">
+							<div id="contact-left">
+								<div class="horizontal-heading wow slideInLeft" data-wow-duration="2s">
+									<h2>Get In <strong>Touch</strong></h2>
+								</div>
+								<div id="offices">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="offcie">
+												<h5><br></h5>
+												<ul class="office-details">
+													<li><i class="fa fa-mobile"></i>+8801847305486&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+													<li><i class="fa fa-envelope-open"></i><a>faimmuntasir201@gmail.com</a></li>
+													<li><i class="fas fa-map-marker"></i><span>Dhaka, Bangladesh.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<ul class="social-list">
+									<a href="mailto:fahimmuntasir201@gmail.com" class="home__social-icon"><i class="fa fa-envelope-open"></i></a>
+									<a href="https://www.facebook.com/fahim.muntasir.393" class="home__social-icon"><i class="fab fa-facebook-f"></i></a>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Contact -->
+
+		<!-- Footer-->
+		<footer class="text-center section" id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+							2020 &copy;<span> Fahim Muntasir</span>
+						</p>
+						<br>
+						<ul class="social-list">
+							<a href="https://linkedin.com/in/mohammad-fahim-muntasir" class="home__social-icon"><i class='fab fa-linkedin-in'></i></a>
+							<a href="https://github.com/fahim25" class="home__social-icon"><i class='fab fa-github'></i></a>
+							<a href="https://www.instagram.com/_fah_im/" class="home__social-icon"><i class='fab fa-instagram'></i></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--Back To Top-->
+			<a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="home" role="button">
+				<i class="fa fa-angle-up"></i>
+			</a>
+		</footer>
+		<!-- Footer Ends -->
 
 		<!--jQuery-->
 		<script src="js/jquery.min.js"></script>
