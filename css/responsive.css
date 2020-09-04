@@ -140,8 +140,6 @@
 	}
 
 	.home__title {
-		font-size: var(--small-font-size);
-		margin-bottom: var(--mb-3);
 		padding-top: 85px;
 	}
 
@@ -315,9 +313,12 @@
 		padding: 0 24px 0 145px;
 
 	}
+	.home__scroll-link i{
+		transform: rotate(-90deg) !important;
+	} 
 
 	.button {
-		font-weight: 400;
+		font-weight: 600;
 		font-size: 16px;
 		padding: 8px 16px 8px 16px;
 		text-align: center;
